@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempête sur l'Échiquier</title>
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Zone de l'adversaire -->
+        <div class="player-area opponent">
+            <div class="hand-container" id="opponent-hand">
+                <!-- Les cartes de l'adversaire seront représentées ici -->
+            </div>
+        </div>
+
+        <!-- Zone de l'échiquier -->
+        <div class="board-area">
+            <h1>Tempête sur l'Échiquier</h1>
+            <div id="board" style="width: 400px"></div>
+            <div class="deck-area">
+                <div class="card-pile" id="deck">Pioche</div>
+                <div class="card-pile" id="discard">Défausse</div>
+            </div>
+        </div>
+
+        <!-- Zone du joueur -->
+        <div class="player-area player">
+            <div class="hand-container" id="player-hand">
+                <!-- Les cartes du joueur seront ajoutées ici par JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0-beta.6/chess.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
