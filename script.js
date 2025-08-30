@@ -224,7 +224,7 @@ $(document).ready(function() {
 
     // --- Chessboard.js Configuration ---
     var onDragStart = function(source, piece) {
-        if (game.isGameOver() || (game.turn() === 'b' && gameState.isPlayerTurn) || (game.turn() === 'w' && !gameState.isPlayerTurn)) {
+        if (game.game_over() || (game.turn() === 'b' && gameState.isPlayerTurn) || (game.turn() === 'w' && !gameState.isPlayerTurn)) {
             return false;
         }
     };
